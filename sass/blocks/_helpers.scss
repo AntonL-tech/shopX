@@ -1,0 +1,18 @@
+.img {
+    display: block;
+    max-width: 100%;
+}
+
+.link__more {
+    color: #7B7C85;
+    &:after {
+        content: '';
+
+        width: 12px;
+        height: 8px;
+
+
+        display: inline-block;
+        background: url('../img/next.svg') center no-repeat;
+    }
+}

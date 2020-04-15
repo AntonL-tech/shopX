@@ -1,0 +1,101 @@
+.featured {
+    display: flex;
+    margin-top: 15rem;
+    overflow: hidden;
+}
+
+.featured__left {
+    width: 50%;
+    position: relative;
+}
+.featured__left__title {
+    font-family: $titilium;
+    font-weight: 300;
+    font-size: 2.3rem;
+    color: black;
+    line-height: 1.7;
+    letter-spacing: 2.7rem;
+
+    position: absolute;
+    top: 50%;
+    right: -16rem;
+    transform: translateY(-50%) rotate(-90deg);
+    &:before {
+        content: "";
+        display: block;
+        width: 611px;
+        height: 611px;
+        background-color: #fff;
+        background-image: url(https://transparenttextures.com/patterns/asfalt-dark.png);
+        position: absolute;
+        right: -8rem;
+        bottom: -55.5rem;
+        z-index: -1;
+    }
+}
+
+.featured__price {
+    width: 266px;
+    height: 266px;
+    padding: 10rem 6.5rem;
+
+    border-radius: 50%;
+    background-color: $pink;
+    border: 1rem solid rgba($white, .49);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    bottom: 12rem;
+    right: 24.5rem;
+}
+
+
+
+.featured__price__old {
+    font-weight: 300;
+    color: $black;
+    font-size: 1.6rem;
+
+    position: relative;
+    right: -40px;
+}
+.featured__price__new {
+    font-weight: 300;
+    color: $white;
+    font-size: 4.6rem;
+}
+
+.featured__right {
+    position: relative;
+    width: 50%;
+    padding: 4.5rem 7.5rem 15.8rem;
+    background-color: $green;
+    
+
+    &:after {
+        content: '';
+        display: block;
+        width: 505px;
+        height: 505px;
+
+        background-color: #ade1c5;
+        background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");       
+        position: absolute;
+        right: 0;
+        bottom: 6.5rem;
+        z-index: 2;
+    }
+}
+
+.featured__title {
+    color: rgba($color: #000000, $alpha: .06);
+    font-weight: 300;
+    font-size: 16.8rem;
+    letter-spacing: 2rem;
+    z-index: 3;
+    padding-left: 3rem;
+}

@@ -1,0 +1,133 @@
+.product {
+    max-width: 350px;
+    margin: 0 auto;
+    
+    background-color: $white;
+    box-shadow: 0 0 76px #E7E7E7;
+}
+
+.product__header {
+    display: flex;
+}
+
+.product__header-left {
+
+    width: 25%;
+    margin: 2rem 0 0;
+    padding: 0;
+    list-style: none;
+    background-color: $white;
+    text-align: center;
+
+    li {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.product__header-btn {
+    padding: 0;
+    border: none;
+    background-color: $white;
+    cursor: pointer;
+}
+
+.product__header-right {
+    width: 75%;
+    position: relative;
+}
+
+.product__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: $white;
+    padding: 1.5rem 1rem;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    background-color: #000;
+
+    position: absolute;
+    bottom: 18px;
+    left: -24px;
+
+    &--green {
+        background-color: $green;
+    }
+    &--pink {
+        background-color: $pink
+    }
+    
+}
+
+.product__main {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.product__title {
+    margin-bottom: 1.5rem;
+
+    a {
+        font-family: $titilium;
+        font-weight: 300;
+        font-size: 2.3rem;
+        color: #000;
+        text-decoration: none;
+        transition: text-decoration .2s linear;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+.product__price {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $green;
+    padding-bottom: 3.9rem;
+    border-bottom: solid 1px #EEEEEE;
+    del {
+        color: #000;
+        margin-right: 1rem;
+    }
+}
+
+.product__footer {
+    margin-top: 3.6rem;
+    text-align: center;
+}
+
+.product__add {
+    font-family: inherit;
+    padding: 0;
+    border: none;
+    background-color: $white;
+    cursor: pointer;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    transition: text-decoration .2s linear;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 27px;
+        height: 21px;
+        margin-right: 1rem;
+        position: relative;
+        top: -2px;
+
+        background: url(../img/cart.png) center no-repeat;
+
+        
+    }
+}

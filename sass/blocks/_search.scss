@@ -1,0 +1,23 @@
+.search {
+
+    &__input {
+        height: 16px;
+        padding: 0 0 0 3rem;
+
+        color: #414141;
+        font-family: inherit;
+        font-size: 1.1rem;
+        font-weight: 400;
+
+        text-transform: uppercase;     
+
+        background: #fefefe url(../img/search-icon.png) left center no-repeat;
+        border: none;
+
+        letter-spacing: 2.2px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
